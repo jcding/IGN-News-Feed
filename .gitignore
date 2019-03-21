@@ -1,0 +1,8 @@
+.ropeproject/
+.vagrant/
+export INSTA485_SETTINGS=config.p2
+node_modules/
+env/
+randomsite.egg-info/
+__pycache__/
+bundle.js
