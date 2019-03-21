@@ -1,6 +1,4 @@
-# eecs485-discussion5-demo
-
-A hands on demo for EECS 485 Discussion 5.
+# IGN News Feed
 
 Contents:
 1. [Objective](#objective)
@@ -9,8 +7,7 @@ Contents:
 
 ## Objective
 
-Create a react widget that generates random words. The widget should display a
-list of words along with a button that adds a new word to the list.
+Create a react widget to show the latest article posts by IGN staff.
 
 ## Setup
 
@@ -43,13 +40,13 @@ $ npm install .
 We provide a Flask app named `randomsite`. The `randomsite` app can be started
 with the provided executable `./bin/randomsiterun`.
 
-`randomsite` has two routes: `/api/v1/random/` and `/`. The `/api/v1/random/`
-route is an API used to retrieve random words and `/` will be where your react
-widget will be placed.
+`randomsite` has three routes: `/content/`, `/comments/` and `/`. The `/content/`
+route is an API used to retrieve the latest news from IGN, `/` will be where your react
+widget will be placed and `/comments/` will display the number of comments for each post.
 
-#### Random API (`/api/v1/random/`)
+#### Content API (`/content/`)
 
-An API is provided to you that will generate random words. You can test this
+API provided by IGN to generate most recent content. You can test this
 API by querying the API with httpie.
 
 Start the app in one terminal:
@@ -60,10 +57,10 @@ $ ./bin/randomsiterun
 
 In another terminal query the API with `httpie`:
 ```shellsession
-$ http "http://localhost:8000/api/v1/random/"
+$ http "http://localhost:8000/content/"
 ```
 
-#### Random Widget (`/`) and React
+<!-- #### Random Widget (`/`) and React
 
 The random widget will be placed on the main page at route `/`. We've already
 coded the route for the main page as well as the template used. See
@@ -86,8 +83,7 @@ components in `randomsite/js/`.
 Now we will take this a step further to demonstrate how a page can be comprised of multiple components.  
 On our main page, we want to display "random pannel."  A random pannel consists of a displayed random message, which you can get from `/api/v1/message/`, and 2 random widgets.  The random pannel should be a new component, which you'll implement in `randomsite/js/randompannel.jsx`.  You'll
 want to modify `randomsite/js/main.jsx` to render the random pannel component, instead of the random widget.
-**You shouldn't have to modify your code in `randomsite/js/randomwidget.jsx`**
+**You shouldn't have to modify your code in `randomsite/js/randomwidget.jsx`** -->
 
 ### Acknowledgments
-Original demo written by Maxwell Morgan.
-maintained by EECS 485 Staff.
+Written by Jason Ding.
