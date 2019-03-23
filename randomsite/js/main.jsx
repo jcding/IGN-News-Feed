@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RandomWidget from './randomwidget.jsx';
+import Widget from './widget.jsx';
 
 ReactDOM.render(
-  <RandomWidget url="/content/" />,
+  <Widget url="/content/" />,
   document.getElementById('randomWidgetEntry'),
 );

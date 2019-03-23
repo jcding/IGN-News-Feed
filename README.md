@@ -36,9 +36,9 @@ $ npm install .
 
 ## Overview
 
-### `randomsite`
+### `ignsite`
 We provide a Flask app named `randomsite`. The `randomsite` app can be started
-with the provided executable `./bin/randomsiterun`.
+with the provided executable `./bin/ignsiterun`.
 
 `randomsite` has three routes: `/content/`, `/comments/` and `/`. The `/content/`
 route is an API used to retrieve the latest news from IGN, `/` will be where your react

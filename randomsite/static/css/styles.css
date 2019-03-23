@@ -3,3 +3,17 @@
     height: auto;
 }
 
+.jumbotron{
+    margin-top: 7%;
+}
+
+
+.post_pic{
+    border-radius: 7px;
+}
+
+.btn-danger{
+    
+    margin-right: 1.5%;
+    margin-bottom: 1%;
+}
