@@ -94,6 +94,8 @@ class Widget extends React.Component {
 
       });
   }
+
+
   render() {
     // check out:
     // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
@@ -127,21 +129,9 @@ class Widget extends React.Component {
 
         <div class="feed">
 
-        <InfiniteScroll
-          // dataLength={this.state.latest.length}
-          // loadMore={this.fetchMoreData}
-          // hasMore={this.state.hasMore}
-          // loader={<h4>Loading...</h4>}
-          // endMessage={<h4>End of posts</h4>}
-          throttle = {100}
-          threshold={300}
-          hasMore={this.state.hasMore}
-          onLoadMore={this.fetchMoreData}
-        >
-          {output}
-        </InfiniteScroll>
+        
 
-          {/* {output} */}
+          {output}
         </div>
 
       </div>
